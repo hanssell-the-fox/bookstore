@@ -1,0 +1,13 @@
+:host {
+  --default-color: #000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: #111;
+  color: #999;
+  box-shadow: 0 0 0.5em var(--default-color);
+  border-top: 1px solid var(--default-color);
+}
