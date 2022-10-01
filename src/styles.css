@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --background-src: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSAiaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMSAxIDYgNCI+PGltYWdlIGZpbHRlcj0idXJsKCNiKSIgd2lkdGg9IjgiIGhlaWdodD0iNiIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBZ0FBQUFHQ0FNQUFBREoyeS9KQUFBQWlsQk1WRVdWc0YyOGhqbG1hTEtpazZ0c2NLTnFaS09acjUxZlo1UnhjNUdqdUk5V1RZSm5hSUJzZlhCVmIyNklwV0tNbEZkbGdsVm5kbFYxaGxSbmExUnVlMUU1U2xIL3EwdUpjMHJpbUVoeGRrQlhiai9MaER0YWh6cWpnanBjY3pwOW5UbnZtemxaV1ROWVpTODVhaWxtVUNoTFhTWXBkU0lDT1NFWUlpRk1hQjR5VVJBbUhBcE9TZ0FWRHdCK0pBSXJBQUFBTG5SU1RsUCsvdjcrL3Y3Ky92NysvdjcrL3Y3Ky92NysvdjcrL3Y3Ky92NysvdjcrL3Y3Ky92NysvdjcrL3Y3Ky92NytpTmRPT3dBQUFEMUpSRUZVQ05jRndZTUJBREVBQkxEcjI3WlpkLy8xbW9ESjBJdFNwOGUzMUg0UUp4eVR5TndDMm1BbmJYN2lWcmlHbVI1TitZQ3M0L1pXM1c4QlpXVUVEWE9nN09zQUFBQUFTVVZPUks1Q1lJST0iLz48ZmlsdGVyIGlkPSJiIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIuNSIgLz48L2ZpbHRlcj48L3N2Zz4=");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background: fixed;
+  background-image: var(--background-src);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-size: clamp(16px, 2.5vw, 0.8rem);
+}
+
+body {
+  height: inherit;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
