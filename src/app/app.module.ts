@@ -1,12 +1,17 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule } from "@angular/common/http";
+import { RouterModule } from "@angular/router";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LogoComponent } from './logo/logo.component';
-import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { LogoComponent } from "./logo/logo.component";
+import { HeaderComponent } from "./header/header.component";
+import { NavbarComponent } from "./navbar/navbar.component";
+import { FooterComponent } from "./footer/footer.component";
+import { BookComponent } from "./books/book/book.component";
+import { BookShelfComponent } from "./books/book-shelf/book-shelf.component";
+import { BookService } from "./books/books.service";
 
 @NgModule({
   declarations: [
@@ -14,13 +19,20 @@ import { FooterComponent } from './footer/footer.component';
     LogoComponent,
     HeaderComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    BookComponent,
+    BookShelfComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule.forRoot([{
+      path: "",
+      component: BookShelfComponent,
+    }]),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [BookService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

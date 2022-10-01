@@ -1,0 +1,26 @@
+a {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  min-width: 18rem;
+  max-width: 10rem;
+  margin: 1rem;
+  box-shadow: 3px 3px 2px #444;
+}
+
+img {
+  width: 100%;
+}
+
+div {
+  padding: 0.5rem 1rem;
+}
+
+.book-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.book-subtitle {
+  font-size: 0.7rem;
+}
