@@ -1,0 +1,34 @@
+:host {
+  --background-color: rgba(0, 0, 0, 0.2);
+  --secondary-color: rgba(0, 0, 0, 0.2);
+
+  --gradient-start: rgba(0, 0, 0, 0.03);
+  --gradient-end: rgba(0, 0, 0, 0.05);
+  --gradient: radial-gradient(
+    var(--gradient-start),
+    var(--gradient-end),
+    var(--gradient-start)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 1em;
+  position: relative;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--secondary-color);
+  box-shadow: 0 0 1em var(--secondary-color);
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  background-image: var(--gradient);
+}

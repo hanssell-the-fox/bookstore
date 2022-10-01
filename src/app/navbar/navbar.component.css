@@ -1,0 +1,40 @@
+nav {
+  color: #ccc;
+  font-weight: semibold;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  margin: 0 0.8em;
+  transition: all 0.3s;
+  font-size: 1em;
+}
+
+a:last-child {
+  margin-right: 0;
+}
+
+a:hover {
+  color: #ddd;
+  text-shadow: -0.2em 0.2em 2px #222;
+}
+
+a.log-in {
+  color: tomato;
+}
+
+a.newest {
+  position: relative;
+}
+
+a.newest::before {
+  content: "";
+  position: absolute;
+  width: 0.5em;
+  height: 0.5em;
+  top: 17%;
+  left: -0.7em;
+  background-image: url(~src/assets/images/star.png);
+  background-size: contain;
+}
